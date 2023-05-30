@@ -1,0 +1,571 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header1{
+    display: none;
+}
+.main{
+    display: none;
+}
+header h2 img{
+    width: 150px;
+}
+header h2{
+    flex-basis: 45%;
+}
+.slider .slide img{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    z-index: -100;
+    
+}
+.a1 {
+    background:linear-gradient(to left,rgba(236, 232, 232, 0.158),rgba(0, 0, 0, 0.945));
+    height: 154vh;
+    margin-top: -32px;
+    position:relative;
+    top: -80px;
+    transition: all 5s ease-in;
+    
+  
+}
+.slider .slide{
+    opacity: 0;
+    transition: all 1s ease;
+}
+.slider .curr{
+    opacity: 1;
+    transition: all 1s ease-in;
+}
+header{
+    height: 80px;
+    position: relative;
+    z-index: 100;
+    top: -100px;
+    animation: anim1 2s ;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes anim1{
+    0%{
+        top: -100px;
+
+    }
+    100%{
+        top: 0px;
+
+    }
+}
+header li{
+    list-style: none;
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+header h2{
+    color: white;
+    
+}
+.slider .dis{
+    position: relative;
+    top: 450px;
+}
+header li a i{
+    margin: 10px 15px;
+    font-size: 30px;
+}
+.toggle{
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    transition: all 0.5s ease-in;
+}
+.slide .dis{
+    position: absolute;
+    z-index: 1000;
+}
+.maindis{
+    position: relative;
+    top: -700px;
+    left: 80px;
+    width: 500px;
+    color: white;
+    opacity: 0;
+    animation: anim2 5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+.maindis h2{
+    font-size: 50px;
+    
+    margin: 10px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.maindis p{
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.maindis .btn{
+    display: flex;
+    align-items: center;
+    
+
+}
+.maindis #makebtn{
+    margin: 20px 10px;
+}
+.maindis .btn a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(211, 145, 58);
+    padding: 10px 15px;
+    border-radius: 24px;
+    
+}
+.maindis .btn a:hover{
+    background-color: black;
+}
+.maindis .btna:active{
+    box-shadow: 0px 0px 10px black;
+}
+@keyframes anim2 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        top:-800px;
+    }
+
+}
+.maindis .count{
+    display: flex;
+    position: relative;
+    top: -50px;
+    
+    
+}
+.maindis .count .dis{
+    margin: 50px 35px;
+}
+.order img{
+    position: relative;
+    width: 500px;
+    transition: all 0.5s ease-in-out;
+}
+.orders{
+    position: relative;
+    top: -580px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+    background-color: rgb(61, 59, 57);
+    height: 100vh;
+}
+.orders .order{
+    width: 500px;
+    height: 320px;
+    background-color: rgb(228, 226, 224);
+    margin: 150px 25px;
+    overflow: hidden;
+    border-radius: 12px;
+    text-align: center;
+    
+}
+.orders .order:hover img{
+    transform: scale(1.1);
+}
+.orders .order:hover{
+    box-shadow: 0px 0px 15px black;
+}
+
+.order .btn{
+    display: flex;
+    margin: 10px 15px;
+    
+}
+
+.orders .lun .btn h2{
+    left: 80px;
+}
+.orders .lun .btn a{
+    left: -80px;
+}
+.orders .din .btn h2{
+    left: 60px;
+}
+.orders .din .btn a{
+    left: -120px;
+}
+.order .btn h2{
+    margin: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 65px;
+    position: relative;
+    color: rgb(185, 168, 119);
+    top: -300px;
+    left: 10px;
+    text-align: center;
+   
+    
+    
+}
+.orders .order .btn{
+    background-color: aliceblue;
+}
+.orders h3{
+    position: absolute;
+    z-index: 10;
+    font-size: 60px;
+    text-align: center;
+    width: 100%;
+    top: 20px;
+    color: aliceblue;
+    font-family: monospace;
+}
+.order .btn a{
+    position: relative;
+    top: -180px;
+    height: 23px;
+    left: -200px;
+    text-decoration: none;
+    background-color: rgb(216, 156, 44);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 24px;
+}
+.order .btn a:hover{
+    background-color: black;
+}
+.order .btn a:active{
+    box-shadow: 0px 0px 10px black;
+}
+.orders1{
+    background: url(/myphp-1/e-com-7/images/wooden-background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    top: -570px;
+    width: 100%;
+    height: 100vh;
+}
+.orders1{
+    display: flex;
+}
+.orders1 img{
+    width: 600px;
+    height: 500px;
+    position: relative;
+    left: -150px;
+    top: 50px;
+    opacity: 0;
+   
+}
+.orders1 .img1{
+    animation: anim3 3s;
+    
+    animation-fill-mode: forwards;
+
+
+}
+@keyframes anim3{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        left: 50px;
+
+    }
+}
+
+.orders1 .dis{
+    position: relative;
+    left: 60px;
+    width: 600px;
+    top: 120px;
+    margin: 10px 15px;
+    color: white;
+    line-height: 2em;
+    font-family:cursive;
+}
+.orders1 .dis h2{
+    letter-spacing: 5px;
+    color: orange;
+    font-size: 40px;
+}
+.orders1 .dis p{
+    position: relative;
+    top: 80px;
+}
+.reg{
+    background-color: aliceblue;
+    position: fixed;
+    z-index: 1000;
+    top: 30px;
+    left: 420px;
+    width: 500px;
+    height: 600px;
+    transition: all 0.5s ease-in;
+    border-radius: 24px;
+}
+.reg form{
+    position: relative;
+    top:-100px;
+    left: 70px;
+
+}
+.reg form input{
+    width: 300px;
+    padding: 10px 15px;
+    margin: 10px 15px;
+    font-size: 20px;
+    border: none;
+    border: 1px rgb(95, 95, 95) solid;
+    border-radius: 24px;
+}
+.reg form input:focus{
+    outline-color: orange;
+    box-shadow: 0px 0px 10px rgb(212, 160, 81);
+}
+.reg form input[type="submit"]{
+    position: relative;
+    left: 20px;
+    color: white;
+    background-color: orange;
+}
+.reg form input[type="submit"]:hover{
+    background-color: black;
+}
+.reg form input[type="submit"]:active{
+    box-shadow: 0px 0px 10px black;
+}
+.reg p{
+    position: relative;
+    top: 20px;
+    font-size: 15px;
+}
+
+.reg img{
+    width: 250px;
+    position: relative;
+    left: 140px;
+    top:-50px;
+}
+.reg h2 i{
+    position: absolute;
+    top: 30px;
+    cursor: pointer;
+    left: 450px;
+}
+.regis{
+    transform: scale(0);
+}
+.log{
+    transform: scale(0);
+}
+.regis1{
+    transform: scale(1);
+
+}
+.log1{
+    transform: scale(1);
+
+}
+
+@media (max-width:375px){
+    
+    body{
+        background-color: rgb(48, 46, 46);
+    }
+    .header1{
+       display: block;
+    }
+    .main{
+        display: block;
+    }
+    .slider img{
+        width: 375px;
+    }
+    .maindis{
+        position: relative;
+        
+        animation: anim6 2s;
+        animation-fill-mode: forwards;
+        top: -200px;
+        opacity: 1;
+        transform: scale(0.6);
+    
+    }
+    @keyframes anim6{
+        0%{
+            opacity: 0;
+            
+        }
+
+        100%{
+            opacity: 1;
+            top: -800px;
+            left: -50px;
+        }
+
+        
+    }
+    
+    .orders1 {
+        
+        width: 375px;
+     
+    }
+    .orders1 img{
+        transform: scale(0.4);
+        
+        
+    }
+    .orders1 .img1{
+        
+        animation: anim8 2s;
+        position: relative;
+        animation-fill-mode: forwards;
+    }
+    @keyframes anim8 {
+        0%{
+            left: -100px;
+
+        }
+        100%{
+            left: -100px;
+            opacity: 1;
+            top: 100px;
+
+        }
+        
+    }
+    .orders1 .dis{
+        position: absolute;
+        top:20px;
+        left: -100px;
+        transform: scale(0.4);
+        
+    }
+    .orders{
+        display: flex;
+        flex-wrap: wrap;
+        height: 500px;
+        align-items: center;
+        justify-content: center;
+        height: 1000px;
+        
+    }
+    .orders .order{
+        margin: 2px 15px;
+        
+        position: relative;
+        top: 180px;
+        
+    }
+    header{
+        display: none;
+    }
+    .header1{
+        visibility: visible;
+        position: fixed;
+        z-index: 1000;
+        background-color: rgb(92, 83, 83);
+        width: 375px;
+        text-align: center;
+        line-height: 5em;
+        height: 667px;
+        top: 0px;
+        left: 0px;
+        transition: all 1s ease-in;
+    }
+    .header1 li{
+        list-style: none;
+    }
+    .header1 li:active{
+        background-color: white;
+        
+    }
+    .header1 a{
+        padding: 10px 150px;
+        color: white;
+    }
+    .header1 #user{
+        font-size: 50px;
+    }
+    .header1 a{
+        text-decoration: none;
+    }
+    .header1 h2 img{
+        width: 120px;
+    }
+    .header1 .cancle5{
+        
+        z-index: 100;
+        left: 10px;
+        font-size: 35px;
+    }
+    .header2{
+        left: -375px;
+        
+    }
+    .main{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        z-index: 1000;
+        
+        width: 375px;
+    }
+    .main h2 img{
+        width: 100px;
+    }
+    .main a{
+        text-decoration: none;
+        
+        font-size: 40px;
+        color: white;
+    }
+    
+    .reg{
+        position: fixed;
+        left: -60px;
+        z-index: 100;
+        transform: scale(0);
+    }
+    .regis1{
+        transform: scale(0.7);
+     
+    }
+    .log1{
+        transform: scale(0.7);
+        
+       
+
+    }
+    
+    
+    
+    
+
+
+
+
+}

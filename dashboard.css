@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgba(233, 232, 231, 0.342);
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 30px;
+    background-color: orange;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+header li{
+    list-style: none;
+}
+header h2{
+    flex-basis: 45%;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(233, 232, 231, 0.342);
+    height: 60px;
+    color: rgb(101, 102, 104);
+    border-bottom: 1px rgb(197, 195, 195) solid;
+}
+.header img{
+    width: 100px;
+    
+    
+}
+.container{
+    display: flex;
+    
+    justify-content: space-around;
+}
+.container li{
+    list-style: none;
+    line-height: 5em;
+    
+    width: 280px;
+}
+.container li::after{
+    content: '';
+    width: 8px;
+    height: 80px;
+    position: absolute;
+    z-index: 10;
+    background-color: orange;
+    left: 0px;
+    margin-top: 0px;
+    visibility: hidden;
+    
+}
+.container li:hover::after{
+    visibility: visible;
+    
+}
+.container li:hover{
+    background-color: rgba(255, 166, 0, 0.356);
+}
+.container li:hover i{
+    background-color: orange;
+}
+.container a{
+    text-decoration: none;
+    color: rgb(80, 81, 82);
+
+}
+.container i{
+    margin: 10px 25px;
+    background-color: rgba(177, 176, 175, 0.61);
+    padding: 10px 15px;
+    border-radius: 12px;
+    color: white;
+}
+.container .menu{
+    position: fixed;
+    left: 0px;
+    top: 180px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container .menu img{
+    width: 150px;
+    height: 130px;
+    left: 60px;
+    top: 80px;
+    position: fixed;
+}
+.container table{
+    position: relative;
+    background-color: rgb(247, 247, 247);
+    width: 800px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100px;
+    padding: 10px 15px;
+    top: 10px;
+    overflow-y: auto;
+    
+
+}
+.container table td{
+    height: 40px;
+    border-bottom: 1px rgb(131, 129, 129) solid;
+    
+}
+.container table .pay{
+    color: white;
+    background-color: rgba(0, 128, 0, 0.356);
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: green;
+}
+.container .table{
+    height: 480px;
+    width: 820px;
+    overflow-y: auto;
+    position: relative;
+    top:79px;
+    color: rgb(57, 58, 59);
+    left: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
